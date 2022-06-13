@@ -1,0 +1,39 @@
+<html>
+<body>
+<script>
+do { 
+   
+    const primeiroValor = prompt('Insira o primeiro valor: ',) 
+    const operacaoMat = prompt('Insira uma operação matemática: ',) 
+    const segundoValor = prompt('Insira o segundo valor: ',) 
+    let resultado;
+
+        switch (operacaoMat) {
+        case '-':
+        resultado = primeiroValor-segundoValor;    
+            break;
+        case '+':
+        resultado = primeiroValor+segundoValor; 
+            break;
+        case '*':
+        resultado = primeiroValor*segundoValor;  
+            break;
+        case '/':
+        resultado = primeiroValor/segundoValor;  
+            break;
+        case '**':
+        resultado=primeiroValor**segundoValor;  
+            break;
+    
+        default:
+            alert('escolha uma operação válida');
+            break;
+        }
+
+    alert(`o resultado é:${resultado}`);
+           
+    } while (confirm('deseja calcular de novo?')===true);
+
+</script>
+</body>
+</html>
