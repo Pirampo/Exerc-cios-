@@ -1,0 +1,34 @@
+<html>
+<body>
+<script>
+function calcMedia (n1, n2, n3){
+    return (n1 + n2 + n3) / 3
+}
+
+function checarVencedor(mediaKoala,mediaDolphins){
+    if (mediaKoala>=2*mediaDolphins){
+        return alert('O vencedor é o time Koala!')
+    }
+
+    if (mediaDolphins>=2*mediaKoala){
+        return alert('O vencedor é o time Dolphins!')
+    }
+    
+    return alert('Não há vencedores')
+}
+
+const pontoskoala1 = prompt('Insira a primeira pontuação (Koala)')
+const pontoskoala2 = prompt('Insira a segunda pontuação (Koala)')
+const pontoskoala3 = prompt('Insira a terceira pontuação (Koala)')
+const pontosdolphins1 = prompt('insira a primeira pontuação (Dolphins)')
+const pontosdolphins2 = prompt('Insira a segunda pontuação (Dolphins)')
+const pontosdolphins3 = prompt('Insira a terceira pontuação (Dolphins)')
+
+const mediaKoala = calcMedia(pontoskoala1,pontoskoala2,pontoskoala3)
+const mediaDolphins = calcMedia(pontosdolphins1,pontosdolphins2,pontosdolphins3)
+
+checarVencedor(mediaKoala,mediaDolphins)
+
+</script>
+</body>
+</html>
